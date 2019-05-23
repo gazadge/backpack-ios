@@ -108,7 +108,9 @@ const BOOL BPKCardDefaultPaddedValue = YES;
     BPKAssertMainThread();
     [super setHighlighted:highlighted];
 
-    self.backgroundColor = highlighted ? BPKColor.gray100 : BPKColor.white;
+    if (self.isUserInteractionEnabled) {
+        self.backgroundColor = highlighted ? BPKColor.gray100 : BPKColor.white;
+    }
 }
 
 - (void)setSubview:(UIView *_Nullable)view {
