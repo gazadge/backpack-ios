@@ -15,13 +15,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+#import "BPKTappableLinkDefinition.h"
 
-#ifndef __BACKPACK_CALENDAR__
-#define __BACKPACK_CALENDAR__
-#import "BPKCalendar.h"
-#import "BPKCalendarCell.h"
-#import "BPKCalendarHeaderCell.h"
-#import "BPKCalendarStickyHeader.h"
-#import "BPKCalendarYearPill.h"
-#import "BPKSimpleDate.h"
-#endif
+NS_ASSUME_NONNULL_BEGIN
+
+@implementation BPKTappableLinkDefinition
+
+- (instancetype)initWithURL:(NSURL *)url range:(NSRange)range {
+    self = [super init];
+
+    if(self) {
+        _url = url;
+        _range = range;
+    }
+
+    return self;
+}
+
+@end
+
+NS_ASSUME_NONNULL_END

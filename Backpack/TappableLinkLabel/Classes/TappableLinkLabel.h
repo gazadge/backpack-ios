@@ -15,13 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+#ifndef __BACKPACK_TAPPABLE_LINK_LABEL__
+#define __BACKPACK_TAPPABLE_LINK_LABEL__
 
-#ifndef __BACKPACK_CALENDAR__
-#define __BACKPACK_CALENDAR__
-#import "BPKCalendar.h"
-#import "BPKCalendarCell.h"
-#import "BPKCalendarHeaderCell.h"
-#import "BPKCalendarStickyHeader.h"
-#import "BPKCalendarYearPill.h"
-#import "BPKSimpleDate.h"
+#import "BPKTappableLinkLabel.h"
+#import "BPKTappableLinkLabelDelegate.h"
 #endif

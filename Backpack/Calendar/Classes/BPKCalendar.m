@@ -151,7 +151,6 @@ NSString *const HeaderDateFormat = @"MMMM";
     [self.calendarView.calendarHeaderView.collectionView registerClass:[BPKCalendarHeaderCell class]
                                             forCellWithReuseIdentifier:CellReuseId];
 
-
     [self.calendarView.collectionView registerClass:[BPKCalendarStickyHeader class]
                          forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
                                 withReuseIdentifier:HeaderReuseId];
@@ -310,8 +309,8 @@ NSString *const HeaderDateFormat = @"MMMM";
 - (void)setFontMapping:(BPKFontMapping *_Nullable)fontMapping {
     if (fontMapping != _fontMapping) {
         _fontMapping = fontMapping;
-        NSDictionary<NSAttributedStringKey, id> *weekdayTextAttributes = [BPKFont attributesForFontStyle:BPKFontStyleTextSm
-                                                                                             fontMapping:fontMapping];
+        NSDictionary<NSAttributedStringKey, id> *weekdayTextAttributes =
+            [BPKFont attributesForFontStyle:BPKFontStyleTextSm fontMapping:fontMapping];
 
         self.appearance.weekdayFont = weekdayTextAttributes[NSFontAttributeName];
         self.appearance.headerTitleFontStyle = BPKFontStyleTextLgEmphasized;

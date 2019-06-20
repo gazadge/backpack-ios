@@ -16,8 +16,8 @@
  * limitations under the License.
  */
 
-#import <UIKit/UIKit.h>
 #import <Backpack/Font.h>
+#import <UIKit/UIKit.h>
 
 @interface BPKCalendarYearPill : UIView
 

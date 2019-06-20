@@ -30,6 +30,7 @@
 #import <Backpack/Label.h>
 #import <Backpack/Spinner.h>
 #import <Backpack/Switch.h>
+#import <Backpack/TappableLinkLabel.h>
 #import <Backpack/TextView.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -192,6 +193,11 @@ typedef NS_ENUM(NSInteger, BPKGrayColor) {
 
     BPKTextView *textViewAppearance = [BPKTextView appearanceWhenContainedInInstancesOfClasses:@[class]];
     textViewAppearance.fontMapping = theme.fontMapping;
+
+    BPKTappableLinkLabel *tappableLinkLabelViewAppearance =
+        [BPKTappableLinkLabel appearanceWhenContainedInInstancesOfClasses:@[class]];
+    tappableLinkLabelViewAppearance.fontMapping = theme.fontMapping;
+    tappableLinkLabelViewAppearance.linkColor = theme.primaryColor;
 }
 
 @end

@@ -16,12 +16,16 @@
  * limitations under the License.
  */
 
-#ifndef __BACKPACK_CALENDAR__
-#define __BACKPACK_CALENDAR__
-#import "BPKCalendar.h"
-#import "BPKCalendarCell.h"
-#import "BPKCalendarHeaderCell.h"
-#import "BPKCalendarStickyHeader.h"
-#import "BPKCalendarYearPill.h"
-#import "BPKSimpleDate.h"
-#endif
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface BPKTappableLinkDefinition : NSObject
+
+@property(readonly) NSRange range;
+@property(readonly, strong) NSURL *url;
+
+- (instancetype)initWithURL:(NSURL *)url range:(NSRange)range;
+
+@end
+NS_ASSUME_NONNULL_END

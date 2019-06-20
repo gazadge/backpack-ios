@@ -17,8 +17,8 @@
  */
 
 #import "BPKCalendarHeaderCell.h"
-#import "BPKCalendarAppearance.h"
 #import "BPKCalendar.h"
+#import "BPKCalendarAppearance.h"
 
 #import <Backpack/Color.h>
 #import <Backpack/Font.h>
@@ -37,7 +37,7 @@
 }
 
 - (void)setFontMapping:(BPKFontMapping *)fontMapping {
-    if(_fontMapping != fontMapping) {
+    if (_fontMapping != fontMapping) {
         _fontMapping = fontMapping;
 
         [self updateMonthTextAppearance];
